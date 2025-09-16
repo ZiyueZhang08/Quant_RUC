@@ -1,7 +1,9 @@
 ##  QuantEcon
 
-1. We will use QuantEcon from Sargent for our Python Basics study 
+1. We will use QuantEcon from Sargent for our Python Basics study  
 ![QuanEcon](image.png)
-2. Codes for our second part class
+
+   
+2. Codes for our first part class  
 https://python-programming.quantecon.org/intro.html
 
