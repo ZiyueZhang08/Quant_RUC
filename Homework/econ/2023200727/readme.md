@@ -1,1 +1,1 @@
-This folder contains homework related to 吴宇茜 2023200727.
+This fodler contains homework belonging to 2023200727.
