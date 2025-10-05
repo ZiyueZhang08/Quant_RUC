@@ -1,0 +1,19 @@
+{
+  "applicant_name": "周方健/James Zhou",
+  "email": "18807846189@163.com",
+  "phone": "+86-18807846189",
+  "undergrad_school": "Renmin University of China",
+  "undergrad_major": "Economics",
+  "target_degree_default": "Master of Economics",
+  "personal_strengths": [
+    "High-precision measurement and statistical foundations (regression, time series, inference)",
+    "Proficient in Python / Stata / Excel, able to complete data cleaning, modeling and visualization",
+    "Have scientific research training: able to read top journal papers and review empirical research"
+  ],
+  "hobbies": "Read top journal papers, financial modeling challenges, and data visualizations",
+  "program_name_map": {
+    "Economics": "Master of Economics",
+    "Finance": "Master of Finance",
+    "Information Management": "MS in Information Systems"
+  }
+}
