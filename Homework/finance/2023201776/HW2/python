@@ -1,0 +1,68 @@
+from docxtpl import DocxTemplate
+import os
+import pandas as pd
+
+# ---------- 文件路径配置 ----------
+uni_file = r"D:\人工智能\大学排名.xlsx"    # 大学列表Excel（含university列）
+field_file = r"D:\人工智能\领域.xlsx"      # 研究领域Excel（含field/journal1等列）
+template_file = r"D:\人工智能\模板.docx"   # 申请信模板（含{{university}}/{{journal1}}等占位符）
+output_dir = r"D:\人工智能\个人模板"    # 最终申请信保存目录
+# ---------- 读取Excel数据 ----------
+universities = pd.read_excel(uni_file)   # 大学数据（每行对应一所大学）
+fields = pd.read_excel(field_file)       # 研究领域数据（每行对应一个研究方向）
+
+# ---------- 个人固定信息 ----------
+personal_info = {
+    "full_name": "Yongze Liu",
+    "program": "Master of Finance",
+    "career": "quant",
+    "skill1": "Python",
+    "skill2": "SQL",
+    "skill3": "Math",
+    "skill4": "PowerBI",
+    "skill5": "Tableau",
+    "academic_environment": "strong academic environment",
+    "approach": "research-oriented approach",
+}
+
+# ---------- 确保输出目录存在 ----------
+os.makedirs(output_dir, exist_ok=True)
+
+# ---------- 双重循环生成申请信 ----------
+generated_count = 0  # 控制最多生成90份
+for _, uni_row in universities.iterrows():
+    for _, field_row in fields.iterrows():
+        # 1. 构造「动态替换上下文」（合并个人信息 + 大学/领域数据）
+        context = {
+            # 个人固定信息（直接复用）
+            **personal_info,  
+            # 动态大学信息（从Excel行中提取，列名需与Excel一致）
+            "university": uni_row.get("university", ""),  
+            # 动态研究领域/期刊信息（从Excel行中提取，列名需与Excel一致）
+            "field": field_row.get("field", ""),          
+            "journal1": field_row.get("journal1", ""),
+            "journal2": field_row.get("journal2", ""),
+            "journal3": field_row.get("journal3", ""),
+        }
+
+        # 2. 加载模板并渲染（每次循环重新加载，避免渲染污染）
+        tpl = DocxTemplate(template_file)
+        tpl.render(context)
+
+        # 3. 生成「安全文件名」（替换空格/特殊字符）
+        safe_uni = uni_row.get("university", "unknown").replace(" ", "_").replace("/", "_")
+        safe_field = field_row.get("field", "unknown").replace(" ", "_")
+        output_filename = f"application_{safe_uni}_{safe_field}.docx"
+        output_path = os.path.join(output_dir, output_filename)
+
+        # 4. 保存文件
+        tpl.save(output_path)
+        print(f"✅ 生成申请信：{output_path}")
+
+        # 5. 控制生成数量（最多90份）
+        generated_count += 1
+        if generated_count >= 90:
+            print("🎉 已生成90份申请信，任务完成")
+            break
+    if generated_count >= 90:
+        break
