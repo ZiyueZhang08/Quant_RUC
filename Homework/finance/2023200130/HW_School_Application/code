@@ -1,0 +1,82 @@
+from pathlib import Path
+from docxtpl import DocxTemplate
+from datetime import datetime
+import platform
+import pandas as pd
+
+APPLICANT_NAME = "Bozhi Bai"
+PROGRAM = "Master of Finance program"
+TARGET_ROLE = "quant researcher"
+
+UNIS_XLSX = Path(r"C:\Users\lenovo\HW_School_Application\universities.xlsx")
+RESEARCH_XLSX = Path(r"C:\Users\lenovo\HW_School_Application\research.xlsx")
+
+# 读取数据
+universities = pd.read_excel(UNIS_XLSX).iloc[:, 0].dropna().astype(str).tolist()
+research_df = pd.read_excel(RESEARCH_XLSX)
+areas = research_df.iloc[:, 0].dropna().astype(str).tolist()  # 第一列：研究领域
+journals_data = research_df.iloc[:, 1].dropna().astype(str).tolist()  # 第二列：顶刊
+skills_data = research_df.iloc[:, 2].dropna().astype(str).tolist()  # 第三列：技能
+
+print(f"研究领域: {areas}")
+print(f"期刊数据: {journals_data}")
+print(f"技能数据: {skills_data}")
+
+# 构造组合
+targets = []
+for uni in universities[:30]:
+    for i, area in enumerate(areas[:3]):  
+        area_journals = journals_data[i*3:(i+1)*3] if len(journals_data) >= (i+1)*3 else journals_data[i*3:]
+        area_skills = skills_data[i*3:(i+1)*3] if len(skills_data) >= (i+1)*3 else skills_data[i*3:]
+        
+        targets.append({
+            "university": uni,
+            "research_area": area,
+            "journals": area_journals,
+            "skills": area_skills,
+        })
+
+print(f"目标数量: {len(targets)}")
+
+doc = DocxTemplate(str(TEMPLATE_PATH))
+generated = []
+timestamp = datetime.now().strftime("%Y%m%d")
+
+for idx, t in enumerate(targets, start=1):
+    context = {
+        "applicant_name": APPLICANT_NAME,
+        "program": PROGRAM,
+        "target_role": TARGET_ROLE,
+        "university": t["university"],
+        "research_area": t["research_area"],
+        "journals": t["journals"],
+        "skills": t["skills"],
+    }
+    doc.render(context)
+    safe_uni = "".join(c for c in t["university"] if c.isalnum() or c in (" ", "_")).strip().replace(" ", "_")
+    safe_area = "".join(c for c in t["research_area"] if c.isalnum() or c in (" ", "_")).strip().replace(" ", "_")
+    out_name = f"SOP_{idx:02d}_{safe_uni}_{safe_area}_{timestamp}.docx"
+    out_path = OUT_DIR / out_name
+    doc.save(out_path)
+    generated.append(out_path)
+
+# 将全部 DOCX 转为 PDF
+pdf_paths = []
+from docx2pdf import convert
+print("开始转换PDF...")
+    
+for i, docx_path in enumerate(generated, 1):
+    try:
+        pdf_path = OUT_DIR / (docx_path.stem + ".pdf")
+        convert(str(docx_path), str(pdf_path))
+        pdf_paths.append(pdf_path)
+        print(f"已转换 {i}/90: {pdf_path.name}")
+    except Exception as e:
+        print(f"转换失败 {i}/90: {docx_path.name} - {e}")
+            # 继续转换下一个文件
+        continue
+    
+print(f"PDF 转换完成！成功转换 {len(pdf_paths)} 个文件")
+    
+
+(len(generated), len(pdf_paths), str(OUT_DIR))
