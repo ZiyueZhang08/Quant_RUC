@@ -30,11 +30,11 @@ We will meet at every week:
 ## Teaching Team (2025 Fall)
 - `Lei Ge (葛雷)` EnnGroup Asst. Professor in Quant Economics, Renmin University of China
 - `Fengxin Li （李丰欣）` Teaching Assistant, School of Information Science, Renmin University of China
-- `Chenxi Wang （王晨曦）` Teaching Assistant, School of Mathematics, Renmin University of China
-- `Tianyou Cui （崔天佑）` Teaching Assistant, School of Mathematics, Renmin University of China
+- `Chenxi Wang （王晨曦）` Teaching Assistant, School of Finance, Renmin University of China
+- `Tianyou Cui （崔天佑）` Teaching Assistant, School of Finance, Renmin University of China
 - `Hongming Liang （梁泓铭）` Teaching Assistant, School of Mathematics, Renmin University of China
 - `Yubo Ouyang （欧阳语博）` Teaching Assistant, School of Mathematics, Renmin University of China
-- `Wei Liang （梁炜）` Teaching Assistant, School of Mathematics, Renmin University of China
+- `Wei Liang （梁炜）` Teaching Assistant, School of Finance, Renmin University of China
 - `Jiayi Xue （薛佳易）` Teaching Assistant, School of Economics, Renmin University of China
 
 
@@ -45,6 +45,7 @@ We will meet at every week:
 - `Chenxi Wang （王晨曦）` Teaching Assistant, Renmin University of China
 - `Tianyou Cui （崔天佑）` Teaching Assistant, Renmin University of China
 - `Yichen Xu （徐一宸）` Teaching Assistant, Renmin University of China
+
 
 
 
