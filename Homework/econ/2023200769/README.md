@@ -6,7 +6,13 @@
 
 #### HW1: sololearn certificates
 
-
+- Done
 
 
 #### HW2: University Applications Letters Generator
+
+- Score: Please check in the Class `Econ` `.md` file.
+- Suggestion: 
+    - `import` can be wrote in just one cell.
+    - Some `functions` are not necessary, but it's great to try and practise.
+    - You can reorganize your code to some extend, such as the test cell (you can `comment` that.)
