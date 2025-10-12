@@ -1,3 +1,3 @@
 # Suggestions for Homework:Application_Letter
 
-1. The `template` needs to be reloaded in each iteration.
+1. Use `f-string ` to join strings together.
