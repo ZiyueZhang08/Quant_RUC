@@ -19,4 +19,4 @@
       random.seed(42)  # 仅在直接运行时生效
       main()
       ```
-    - We expect you to consider and explain why there are some **errors & fails** in the process that convert `docx` to `pdf` files.
+    - It's better to have document template in .docx rather than putting it directly in the code.
