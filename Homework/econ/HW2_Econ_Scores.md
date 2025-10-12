@@ -68,7 +68,7 @@
 
   - **File process:** Use `os` to do file or path work. To get the complete path, we tend to connect via `os` to automatically match the differences in paths between systems, such as `Windows`, `Linux`, `Mac`. Before reading or writing a file or path, you can use `os.path.exists(path)` or `os.path.isfile(path)` to ensure it exists.
 
-  - **Excel list: **We anticipate generating a single `Excel list` for your generator's loop; a sample `pandas Dataframe` structure is provided below.
+  - **Excel list:** We anticipate generating a single `Excel list` for your generator's loop; a sample `pandas Dataframe` structure is provided below.
 
     >| **Universities**           | **Areas**  | **Journals**       | **Skills**         |
     >| -------------------------- | ---------- | ------------------ | ------------------ |
