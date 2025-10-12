@@ -14,4 +14,3 @@
 - Score: Please check in the Class `Econ` `.md` file.
 - Suggestions:
     - You can improve your code with `random` universities (we want to randomly select universities from different rank groups.)
-    - It's better to have more instructions or comments in the code, but not compulsory.

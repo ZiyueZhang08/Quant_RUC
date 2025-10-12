@@ -6,4 +6,7 @@
 2. It is also recommended to add the use of tqdm progress bar to show progress.
 
 TA: Liangwei
+<<<<<<< HEAD
 
+=======
+>>>>>>> submission

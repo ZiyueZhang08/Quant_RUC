@@ -7,4 +7,7 @@
 4. When submitting assignments, do not upload compressed files; upload  folders and example results under the submission branch.
 
 TA: Liangwei
+<<<<<<< HEAD
 
+=======
+>>>>>>> submission
