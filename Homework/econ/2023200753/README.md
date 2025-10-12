@@ -16,7 +16,7 @@
     - It is better to place `random.seed` inside `main`:
       ```
       if __name__ == "__main__":
-      random.seed(42)  # 仅在直接运行时生效
-      main()
+          random.seed(42)  # 仅在直接运行时生效
+          main()
       ```
     - It's better to have document template in .docx rather than putting it directly in the code.
