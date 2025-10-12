@@ -84,4 +84,4 @@
   
   - **Separate commands and code:** In `.ipynb` files, keep commands (e.g., `!pip install xxx` or `%pip install xxx`) and Python code in separate cells to maintain organization and clarity. You could also make `markdown` cells to make your code structure clearer and more readable.
   
-  - **Random algorithm: ** We expect you to use Python `random` to draw 30 universities from a list, in which process you can use `random.Random(seed)` to ensure replication.
+  - **Random algorithm:** We expect you to use Python `random` to draw 30 universities from a list, in which process you can use `random.Random(seed)` to ensure replication.
