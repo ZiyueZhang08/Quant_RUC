@@ -11,7 +11,7 @@
 
 #### HW2: University Applications Letters Generator
 
-- Score: Please check in the Class `Econ` `.md` file.
+- Score: 8.5
 - Suggestion: 
     - `import` can be wrote in just one cell.
     - Some `functions` are not necessary, but it's great to try and practise.
