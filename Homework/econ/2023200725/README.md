@@ -14,3 +14,4 @@
 - Comments:
     - Package imports can be centralized in a single code block.
     - Too much raw data in the code affects readability.
+    - Use `os.path.join` to construct the full path.
