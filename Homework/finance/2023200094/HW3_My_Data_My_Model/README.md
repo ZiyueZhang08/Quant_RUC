@@ -1,24 +1,23 @@
 ## 1. 文件结构
 
-本项目遵循标准的数据科学工作流，代码与数据分离，逻辑清晰。
-
 ```
 .
 ├── Data/
-│   ├── 天津_八里台_esf_data.xlsx  (及其他原始数据)
+│   ├── Tianjin_Quanyechang_esf_data.xlsx  (及其他原始数据)
+│   ├── Tianjin_Quanyechang_zu_data.xlsx  (及其他原始数据)
 │   ├── cleaned_full_data.parquet   (清洗合并后的主数据)
 │   └── OLS_predicted_data.parquet  (含模型预测值的数据)
 │
 ├── Model/
-│   ├── 01_data_preprocessing.ipynb
-│   ├── 02_descriptive_and_economic_analysis.ipynb
-│   ├── 03_regression_model.ipynb
-│   └── 04_feature_engineering_and_improved_model.ipynb
+│   ├── data_preprocessing.ipynb
+│   ├── descriptive_and_economic_analysis.ipynb
+│   ├── simple_regression_model.ipynb
+│   └── advanced_model.ipynb
 │
 ├── figure/
-│   ├── regional_price_boxplot_comparison.png
-│   ├── predicted_price_to_rent_ratio_bar.png
-│   └── (其他生成的图表)
+│   ├── FigureA.png
+│   ├── FigureB.png
+│   ├── FigureC.png
 │
 └── README.md
 ```
@@ -35,25 +34,7 @@
 
 ---
 
-## 3. 主要分析结果与核心发现
-
-通过对数据的深入分析和建模，我们得出了以下核心结论：
-
-1.  **地段是房价和租金的决定性因素**：
-    回归模型结果清晰地表明，在控制了面积等因素后，房产所在的**地理位置**是决定其基础价格和租金水平的最主要因素。市中心核心区（劝业场、八里台）与新兴/远郊区（中新生态城、武清）之间存在显著的价格梯度。
-
-2.  **面积对单价存在非线性“倒U型”影响**：
-    通过引入面积的**二次项**，模型的解释力（R²）得到了大幅提升。分析发现，面积对单价/租金单价的影响并非简单的线性关系，而是呈现出**边际效应递减**的趋势：随着面积增加，单位价格的增长会放缓，甚至在达到某个点后开始下降。这更符合“大户型单价更具性价比”的市场规律。
-
-3.  **不同地区的定价模式存在差异（交互效应）**：
-    通过引入“面积 × 地区”的**交互项**，我们发现面积对单价的影响在不同地区之间存在显著差异。这意味着每个地区不仅基础房价不同，其价格随面积变化的“陡峭程度”也不同。这揭示了市场背后更深层次的结构性差异，简单模型无法捕捉。
-
-4.  **模型预测提供了更稳健的租售比**：
-    对比三种方法（原始数据、简单模型、复杂模型）计算的租售比，我们发现基于最终复杂模型预测值计算出的租售比结果最为稳健。它剔除了市场噪音和极端值的影响，更能反映由地段和面积结构决定的房产**“基本面”投资回报周期**。
-
----
-
-## 4. 使用的技术与工具
+## 3. 使用的技术与工具
 
 * **数据采集**: `Selenium`
 * **数据处理与分析**: `Pandas`, `NumPy`
