@@ -14,7 +14,7 @@ We will meet at every week:
 
 ## Contents:
 1. Python Basics 
-2. Financial Big data (Kaggle,HuggingFace, WRDS, CSMAR)
+2. Financial Big data (Kaggle, HuggingFace, WRDS, CSMAR)
 3. Machine Learning Fundamentals (Optimization, Lasso, Emsembled Methods, Modeling Emsembling)
 4. Deep Learning Fundamentals (ANN, CNN)
 5. Natural Language Processing Fundamentals (Transformers)
@@ -45,6 +45,7 @@ We will meet at every week:
 - `Chenxi Wang （王晨曦）` Teaching Assistant, Renmin University of China
 - `Tianyou Cui （崔天佑）` Teaching Assistant, Renmin University of China
 - `Yichen Xu （徐一宸）` Teaching Assistant, Renmin University of China
+
 
 
 
