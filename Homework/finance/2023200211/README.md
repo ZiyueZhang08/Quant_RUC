@@ -4,4 +4,4 @@
 
 2. Reduce traces of AI-generated code
 
-3. Avoid wrapping import statements in try/except blocks, and refrain from repeatedly using subprocess.run([python -m pip install ...]) in notebooks.
+3. Avoid wrapping import statements in try/except blocks, and refrain from repeatedly `using subprocess.run([python -m pip install ...])` in notebooks.
