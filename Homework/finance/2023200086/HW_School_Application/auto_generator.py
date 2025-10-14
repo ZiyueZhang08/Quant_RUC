@@ -3,6 +3,11 @@ import pandas as pd
 from pathlib import Path
 from docx2pdf import convert
 
+# Tips for using this script:
+# 1. Write some comments in the code for better understanding.
+# 2. The `safe_university` should be processed in the outter loop to 
+#    avoid redundant processing. (In this code, each university will 
+#    be processed `len(info_df)` times, which is inefficient.)
 
 def generate_sop_documents():
     output_dir = Path("HW_School_Application")
@@ -49,4 +54,5 @@ def generate_sop_documents():
         convert(first_doc, pdf_path)
 
 if __name__ == "__main__":
+
     generate_sop_documents()
