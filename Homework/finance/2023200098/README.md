@@ -1,4 +1,4 @@
 # Suggestions for Homework:Application_Letter
 
-1. The `template` needs to be reloaded in each iteration.
+1. Rendering multiple contexts with a single DocxTemplate instance may produce incorrect results.
 2. Wrap the logic in functions.

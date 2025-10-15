@@ -2,3 +2,4 @@
 
 1. Wrap the logic in functions.
 2. Use `pathlib` to manage file paths.
+3. Comment the code when needed.
