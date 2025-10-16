@@ -14,10 +14,12 @@ The complete dataset is available in my repository: [https://github.com/junhaoch
 ### Basic Models
 
 **Model 1: Housing Price per m2**
-price/m2 = β₁·m2 + β₂·Xisanqi + β₃·Qinghe + β₄·Xierqi + β₅·Shangdi + ε
+
+`price/m2 = β₁·m2 + β₂·Xisanqi + β₃·Qinghe + β₄·Xierqi + β₅·Shangdi + ε`
 
 **Model 2: Rent per m2**
-rent/m2 = β₁·m2 + β₂·Xisanqi + β₃·Qinghe + β₄·Xierqi + β₅·Shangdi + ε
+
+`rent/m2 = β₁·m2 + β₂·Xisanqi + β₃·Qinghe + β₄·Xierqi + β₅·Shangdi + ε`
 
 **Model Specification Notes:**
 - **No Intercept Term**: The models exclude the constant (intercept) term because we include a complete set of location dummy variables. Including both would create perfect multicollinearity (the "dummy variable trap"), as the location dummies sum to 1.
@@ -26,10 +28,12 @@ rent/m2 = β₁·m2 + β₂·Xisanqi + β₃·Qinghe + β₄·Xierqi + β₅·Sh
 ### Extended Models
 
 **Model 1+: Enhanced Housing Price Model**
-price/m2 = β₁·m2² + β₂·Xisanqi + β₃·Qinghe + β₄·Xierqi + β₅·Shangdi + β₆·Xisanqi·m2 + β₇·Qinghe·m2 + β₈·Xierqi·m2 + β₉·Shangdi·m2 + ε
+
+`price/m2 = β₁·m2² + β₂·Xisanqi + β₃·Qinghe + β₄·Xierqi + β₅·Shangdi + β₆·Xisanqi·m2 + β₇·Qinghe·m2 + β₈·Xierqi·m2 + β₉·Shangdi·m2 + ε`
 
 **Model 2+: Enhanced Rent Model**
-rent/m2 = β₁·m2² + β₂·Xisanqi + β₃·Qinghe + β₄·Xierqi + β₅·Shangdi + β₆·Xisanqi·m2 + β₇·Qinghe·m2 + β₈·Xierqi·m2 + β₉·Shangdi·m2 + ε
+
+`rent/m2 = β₁·m2² + β₂·Xisanqi + β₃·Qinghe + β₄·Xierqi + β₅·Shangdi + β₆·Xisanqi·m2 + β₇·Qinghe·m2 + β₈·Xierqi·m2 + β₉·Shangdi·m2 + ε`
 
 **Extended Model Specification Notes:**
 - **No Linear m2 Term**: The linear m2 term is excluded because we include a complete set of location-area interaction terms (location dummies × m2). Including both would create perfect multicollinearity, as the interaction terms collectively represent the linear area effect across all locations.
