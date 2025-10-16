@@ -1,5 +1,5 @@
 ## Project Overview
-This project analyzes housing market data through web scraping, statistical modeling, and predictive analysis. I divide the workflow into two main components: data collection and data analysis.
+This project analyzes housing market data through web scraping, statistical modeling, and predictive analysis. Our three-member team divided the scraping of four locations, with me responsible for Xisanqi and Qinghe.
 
 ## File Structure
 - **`Housing_Price_Rent_Mining.ipynb`**: Web scraping module that collects housing price and rent data from real estate websites
