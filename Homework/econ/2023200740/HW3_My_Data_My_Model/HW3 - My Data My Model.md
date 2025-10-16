@@ -1,7 +1,3 @@
----
-math: true
----
-
 ## Project Overview
 This project analyzes housing market data through web scraping, statistical modeling, and predictive analysis. I divide the workflow into two main components: data collection and data analysis.
 
@@ -18,14 +14,10 @@ The complete dataset is available in my repository: [https://github.com/junhaoch
 ### Basic Models
 
 **Model 1: Housing Price per m2**
-$$
-\text{price/m2} = \beta_{1} \cdot \text{m2} + \beta_{2} \cdot \text{Xisanqi} + \beta_{3} \cdot \text{Qinghe} + \beta_{4} \cdot \text{Xierqi} + \beta_{5} \cdot \text{Shangdi} + \varepsilon
-$$
+price/m2 = β₁·m2 + β₂·Xisanqi + β₃·Qinghe + β₄·Xierqi + β₅·Shangdi + ε
 
 **Model 2: Rent per m2**
-$$
-\text{rent/m2} = \beta_{1} \cdot \text{m2} + \beta_{2} \cdot \text{Xisanqi} + \beta_{3} \cdot \text{Qinghe} + \beta_{4} \cdot \text{Xierqi} + \beta_{5} \cdot \text{Shangdi} + \varepsilon
-$$
+rent/m2 = β₁·m2 + β₂·Xisanqi + β₃·Qinghe + β₄·Xierqi + β₅·Shangdi + ε
 
 **Model Specification Notes:**
 - **No Intercept Term**: The models exclude the constant (intercept) term because we include a complete set of location dummy variables. Including both would create perfect multicollinearity (the "dummy variable trap"), as the location dummies sum to 1.
@@ -34,14 +26,10 @@ $$
 ### Extended Models
 
 **Model 1+: Enhanced Housing Price Model**
-$$
-\text{price/m2} = \beta_{1} \cdot \text{m2}^2 + \beta_{2} \cdot \text{Xisanqi} + \beta_{3} \cdot \text{Qinghe} + \beta_{4} \cdot \text{Xierqi} + \beta_{5} \cdot \text{Shangdi} + \beta_{6} \cdot \text{Xisanqi} \cdot \text{m2} + \beta_{7} \cdot \text{Qinghe} \cdot \text{m2} + \beta_{8} \cdot \text{Xierqi} \cdot \text{m2} + \beta_{9} \cdot \text{Shangdi} \cdot \text{m2} + \varepsilon
-$$
+price/m2 = β₁·m2² + β₂·Xisanqi + β₃·Qinghe + β₄·Xierqi + β₅·Shangdi + β₆·Xisanqi·m2 + β₇·Qinghe·m2 + β₈·Xierqi·m2 + β₉·Shangdi·m2 + ε
 
 **Model 2+: Enhanced Rent Model**
-$$
-\text{rent/m2} = \beta_{1} \cdot \text{m2}^2 + \beta_{2} \cdot \text{Xisanqi} + \beta_{3} \cdot \text{Qinghe} + \beta_{4} \cdot \text{Xierqi} + \beta_{5} \cdot \text{Shangdi} + \beta_{6} \cdot \text{Xisanqi} \cdot \text{m2} + \beta_{7} \cdot \text{Qinghe} \cdot \text{m2} + \beta_{8} \cdot \text{Xierqi} \cdot \text{m2} + \beta_{9} \cdot \text{Shangdi} \cdot \text{m2} + \varepsilon
-$$
+rent/m2 = β₁·m2² + β₂·Xisanqi + β₃·Qinghe + β₄·Xierqi + β₅·Shangdi + β₆·Xisanqi·m2 + β₇·Qinghe·m2 + β₈·Xierqi·m2 + β₉·Shangdi·m2 + ε
 
 **Extended Model Specification Notes:**
 - **No Linear m2 Term**: The linear m2 term is excluded because we include a complete set of location-area interaction terms (location dummies × m2). Including both would create perfect multicollinearity, as the interaction terms collectively represent the linear area effect across all locations.
