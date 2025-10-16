@@ -8,7 +8,7 @@ This project analyzes housing market data through web scraping, statistical mode
 - **`HW3 - My Data My Model.md`**: Project documentation (this file)
 
 ## Data Source
-The complete dataset and additional project files are available in our group repository:
+The complete dataset and additional project files are available in my repository: 
 [https://github.com/junhaochen-econ/RUC-Coursework/tree/main/Quant](https://github.com/junhaochen-econ/RUC-Coursework/tree/main/Quant)
 
 ## Model Specifications (IMPORTANT)
