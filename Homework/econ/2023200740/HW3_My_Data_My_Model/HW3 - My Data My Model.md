@@ -7,7 +7,7 @@ This project analyzes housing market data through web scraping, statistical mode
 - **`Housing_Price_Rent_Analysis.ipynb`**: Data analysis and modeling module that processes the collected data and builds predictive models
 - **`HW3 - My Data My Model.md`**: Project documentation (this file)
 
-## Data Source
+## Dataset
 The complete dataset is available in my repository: 
 [https://github.com/junhaochen-econ/RUC-Coursework/tree/main/Quant](https://github.com/junhaochen-econ/RUC-Coursework/tree/main/Quant)
 
