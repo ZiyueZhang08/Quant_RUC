@@ -22,6 +22,6 @@
 
 - Score: Please check in the Class `Econ` `.md` file.
 - Comments:
-   - You are expected to use `statsmodels` library for your linear regression model for data statistics (ordinary least squares, t-test, P-value etc.), while `sklearn` focus on machine learning algorithms and predictions.
+   - You are expected to use `statsmodels` library for your linear regression model for data statistics (ordinary least squares, t-test, P-value etc.), while `sklearn` focus on machine learning algorithms and predictions. (Recommend)
    - You can also add fixed effects to your OLS model by using `linearmodels.panel.PanelOLS`.
    - Great job in data visualization.

@@ -15,3 +15,9 @@
 - Suggestions:
     - You can improve your code with `random` universities (we want to randomly select universities from different rank groups.)
     - We want you to submit `ipynb` format files.
+
+
+#### HW3: My_Data_My_Model
+
+- Score: Please check in the Class `Econ` `.md` file.
+- Comments:
