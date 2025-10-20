@@ -13,3 +13,10 @@
 - Score: Please check in the Class `Econ` `.md` file.
 - Comments:
   - .py is okay, but u can try .ipynb next time
+
+
+#### HW3: My_Data_My_Model
+
+- Score: Please check in the Class `Econ` `.md` file.
+- Comments:
+  - 
