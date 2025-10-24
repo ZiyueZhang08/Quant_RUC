@@ -15,3 +15,14 @@
     - Package imports can be centralized in a single code block.
     - Too much raw data in the code affects readability.
     - Use `os.path.join` to construct the full path.
+
+
+#### HW3: My_Data_My_Model
+
+- Score: Please check in the Class `Econ` `.md` file.
+- Comments:
+    - You can `import` only in the beginning of your code. No need to import in every cell.
+    - You can try to run the code without the parameter `MAX_PAGES`.
+    - In your `data analysis.ipynb` file, the `sell_df` is not defined.
+    - You are expected to use `statsmodels` library for your linear regression model for data statistics (ordinary least squares, t-test, P-value etc.), while `sklearn` focus on machine learning algorithms and predictions. (Recommend)
+    - Your comments on how to select different models? (only using $R^2$ or other metrics?)

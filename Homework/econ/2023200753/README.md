@@ -20,3 +20,14 @@
           main()
       ```
     - It's better to have document template in .docx rather than putting it directly in the code.
+
+
+#### HW3: My_Data_My_Model
+
+- Score: Please check in the Class `Econ` `.md` file.
+- Comments:
+    - In `.ipynb` files, keep commands (e.g., `!pip install xxx` or `%pip install xxx`) and Python code in separate cells to maintain organization and clarity.
+    - In this homework we prefer to identify `next page` button rather than revise the parameter in you `url` path.
+    - You are expected to use `statsmodels` library for your linear regression model for data statistics (ordinary least squares, t-test, P-value etc.), while `sklearn` focus on machine learning algorithms and predictions. (Recommend)
+    - Great job in data visualization, but in the figure `Figure A, Figure B, Figure C, Figure D` the axhline is not relative. (BE AWARE)
+    - Your comments on how to select the models?

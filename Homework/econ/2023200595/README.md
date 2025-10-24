@@ -13,3 +13,12 @@
 - Score: Please check in the Class `Econ` `.md` file.
 - Comments:
   - .py is okay, but u can try .ipynb next time
+
+
+#### HW3: My_Data_My_Model
+
+- Score: Please check in the Class `Econ` `.md` file.
+- Comments:
+  - Please save all the `log` and `output` information with you in the `.ipynb` file.
+  - You are expected to use `statsmodels` library for your linear regression model for data statistics (ordinary least squares, t-test, P-value etc.), while `sklearn` focus on machine learning algorithms and predictions. (Recommend)
+  - The explanation seems like ai-generated text.
