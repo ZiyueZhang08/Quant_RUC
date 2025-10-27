@@ -19,7 +19,7 @@
  
 #### HW3: My_Data_My_Model
 
-- Score: 9.0
+- Score: 8.5
 - Comments:
   - The `execution history` of the code needs to be preserved, which is why you are required to submit an `.ipynb` file instead of a `.py` file.
   - All your code is concentrated in a single block, which doesn't leverage the advantages of .ipynb. Next time, try splitting the code into logical segments and running them separately to improve readability and convenience.
