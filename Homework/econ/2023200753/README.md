@@ -11,7 +11,7 @@
 
 #### HW2: University Applications Letters Generator
 
-- Score: Please check in the Class `Econ` `.md` file.
+- Score: 8.5
 - Comments:
     - It is better to place `random.seed` inside `main`:
       ```
@@ -24,7 +24,7 @@
 
 #### HW3: My_Data_My_Model
 
-- Score: Please check in the Class `Econ` `.md` file.
+- Score: 8.5
 - Comments:
     - In `.ipynb` files, keep commands (e.g., `!pip install xxx` or `%pip install xxx`) and Python code in separate cells to maintain organization and clarity.
     - In this homework we prefer to identify `next page` button rather than revise the parameter in you `url` path.

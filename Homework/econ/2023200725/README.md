@@ -10,7 +10,7 @@
 
 
 #### HW2: University Applications Letters Generator
-- Score: Please check in the Class `Econ` `.md` file.
+- Score: 8.5
 - Comments:
     - Package imports can be centralized in a single code block.
     - Too much raw data in the code affects readability.
@@ -19,7 +19,7 @@
 
 #### HW3: My_Data_My_Model
 
-- Score: Please check in the Class `Econ` `.md` file.
+- Score: 8.5
 - Comments:
     - You can `import` only in the beginning of your code. No need to import in every cell.
     - You can try to run the code without the parameter `MAX_PAGES`.
