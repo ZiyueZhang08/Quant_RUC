@@ -11,14 +11,14 @@
 
 #### HW2: University Applications Letters Generator
 
-- Score: 8.5
-- Suggestion: 
-    - `import` can be wrote in just one cell.
-    - Some `functions` are not necessary, but it's great to try and practise.
-    - You can reorganize your code to some extend, such as the test cell (you can `comment` that.)
+- Score: 9.0
+- Comments:
+    - Great application of `Class`.
+    - You can improve your code with `random` universities (we want to randomly select universities from different rank groups.) It will be much better.
 
 #### HW3: My_Data_My_Model
 
-- Score: 9.0
+- Score: 8.5
 - Comments:
   - You can flexibly use `multi-level headings (#, ##) + numbering (1.1.1, 1.1.2)` to make the notebook more visually appealing and easier to navigate.
+  - `statmodel` is more recomended dealing linear regression, as sklearn is a package for machine learning
