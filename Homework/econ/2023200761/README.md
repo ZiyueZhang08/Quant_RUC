@@ -19,5 +19,6 @@
 
 #### HW3: My_Data_My_Model
 
-- Score: Please check in the Class `Econ` `.md` file.
+- Score: 9.0
 - Comments:
+  - Great Job!
